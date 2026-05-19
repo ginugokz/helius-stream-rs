@@ -1,0 +1,30 @@
+[package]
+name = "helius-stream"
+version = "0.1.0"
+edition = "2021"
+authors = ["ginug"]
+description = "Resilient Helius WebSocket client for Solana with gap detection, reconnect backoff, and circuit breaker. Extracted from a battle-tested MEV engine."
+license = "MIT"
+repository = "https://github.com/ginugokz/helius-stream-rs"
+documentation = "https://docs.rs/helius-stream"
+keywords = ["solana", "helius", "websocket", "rpc", "defi"]
+categories = ["api-bindings", "network-programming", "asynchronous"]
+readme = "README.md"
+
+[dependencies]
+tungstenite  = { version = "0.24", default-features = false, features = ["rustls-tls-webpki-roots", "handshake"] }
+rustls       = { version = "0.23", default-features = false, features = ["std", "tls12", "logging", "ring"] }
+webpki-roots = "0.26"
+serde        = { version = "1", features = ["derive"] }
+serde_json   = "1"
+bs58         = "0.5"
+base64       = "0.22"
+thiserror    = "1"
+log          = "0.4"
+
+[profile.release]
+overflow-checks = true
+
+[[example]]
+name = "basic_stream"
+path = "examples/basic_stream.rs"
