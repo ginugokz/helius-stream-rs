@@ -4,12 +4,13 @@ version = "0.1.0"
 edition = "2021"
 authors = ["ginug"]
 description = "Resilient Helius WebSocket client for Solana with gap detection, reconnect backoff, and circuit breaker. Extracted from a battle-tested MEV engine."
-license = "MIT"
+license = "Apache-2.0"
 repository = "https://github.com/ginugokz/helius-stream-rs"
 documentation = "https://docs.rs/helius-stream"
 keywords = ["solana", "helius", "websocket", "rpc", "defi"]
 categories = ["api-bindings", "network-programming", "asynchronous"]
 readme = "README.md"
+exclude = ["NOTES.md", "SETUP_WINDOWS.md"]
 
 [dependencies]
 tungstenite  = { version = "0.24", default-features = false, features = ["rustls-tls-webpki-roots", "handshake"] }

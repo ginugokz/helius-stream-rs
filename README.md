@@ -2,7 +2,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/helius-stream.svg)](https://crates.io/crates/helius-stream)
 [![Docs.rs](https://docs.rs/helius-stream/badge.svg)](https://docs.rs/helius-stream)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
 
 > Resilient Helius WebSocket client for Solana.
 > Gap detection, reconnect backoff, circuit-breaker state.
@@ -79,7 +79,9 @@ Single connection, single thread, on a €4.50/mo Hetzner CX22:
 
 ## License
 
-MIT.
+Apache-2.0. Includes patent grant — contributors automatically grant patent rights
+for their contributions, and the grant terminates if a user initiates patent
+litigation. See [LICENSE](./LICENSE).
 
 ## Contributing
 
