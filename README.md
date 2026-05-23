@@ -71,7 +71,7 @@ crate.
 
 ## Performance
 
-Single connection, single thread, on a €4.50/mo Hetzner CX22:
+Single connection, single thread, residential fiber (Vodafone PT, Porto):
 
 - ~1,500 updates/hour sustained
 - ~50ms p50 from server send to `next_update()` return
