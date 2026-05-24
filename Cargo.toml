@@ -1,6 +1,6 @@
 [package]
 name = "helius-stream"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["ginug"]
 description = "Resilient Helius WebSocket client for Solana with gap detection, reconnect backoff, and circuit breaker. Extracted from a battle-tested MEV engine."
